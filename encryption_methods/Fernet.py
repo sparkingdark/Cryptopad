@@ -5,7 +5,7 @@ class Fernet:
         i = input("Enter some text:")
         key = fernet.Fernet.generate_key()
         print('Key: ', key)
-        
+
         f = fernet.Fernet(key)
         token = f.encrypt(bytes(i,encoding='UTF-8'))
 
@@ -17,7 +17,7 @@ class Fernet:
 
         f = fernet.Fernet(key)
 
-        print(f.decrypt(token))
+        print('Decrypted Text: ', f.decrypt(token))
         return (f.decrypt(token))
 
 arr = Fernet.encrypt()
