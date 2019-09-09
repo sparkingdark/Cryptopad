@@ -7,14 +7,13 @@ class App(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.title = 'CRYPTOPad'
+        self.title = 'CryptoPad'
         self.left = 0
         self.top = 0
         self.width = 300
         self.height = 200
         self.setWindowTitle(self.title)
-        self.statusBar().showMessage("Welcome to cryptopad")
-        
+        self.statusBar().showMessage('Welcome to CryptoPad')
         
         
         #open a new file
